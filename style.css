@@ -45,10 +45,12 @@ position: relative;
   gap:100px;
 
 
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto 1fr ;
   grid-template-areas: "main-heading main-heading WeAre"
                         "pic1 pic2 pic3"
-                        "pic4 pic5 pic6";
+                        "pic4 pic5 pic6"
+                        "kaki kaki kaki"
+                        ;
 
 }
 .main-heading{
@@ -87,6 +89,14 @@ position: absolute;
 position: absolute;
     grid-area: pic6;
 }
+.kaki{
+  grid-area: kaki;
+  margin:auto;
+  margin-bottom:30px;
+  border-radius: 50px;
+  background-color:#2a3139;
+  color: white;
+}
 img{
   max-width: 238px;
   border-radius: 50px;
@@ -107,7 +117,8 @@ position: relative;
     grid-template-areas:"main-heading WeAre"
                         "pic1 pic2"
                         "pic3 pic4"
-                        "pic5 pic6";
+                        "pic5 pic6"
+                        "kaki kaki";
     gap:30px;
     margin-left:100px;
   }
@@ -129,7 +140,7 @@ position: relative;
   .container{
     grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-areas:"main-heading" "WeAre" "pic1" "pic2"
-                        "pic3" "pic4" "pic5" "pic6";
+                        "pic3" "pic4" "pic5" "pic6" "kaki";
     gap:20px;
     }
     .item{
