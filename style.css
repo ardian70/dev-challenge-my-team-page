@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+body{
+  font-family: 'Merriweather', serif;
+  background-color: #FAFAFA;
+  color: #000000;
+    max-width: 1440px;
+}
+
+h1{
+  font-size: 36px;
+line-height: 48px;
+letter-spacing: -0.045em;
+}
+h3{
+  text-transform: capitalize;
+}
+.item{
+
+  margin-right: auto;
+  padding:5px;
+}
+.jabatan{
+  font-size: 12px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+
+  color: #000000;
+  letter-spacing: -0.003rem;
+  writing-mode:vertical-rl;
+
+  position: absolute;
+
+}
+.container{
+position: relative;
+  display: grid;
+  padding: 10px;
+  max-width: 1000px;
+  margin:0 auto;
+  margin-top: 20vh;
+
+
+  height:100vh;
+  gap:100px;
+
+
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "main-heading main-heading WeAre"
+                        "pic1 pic2 pic3"
+                        "pic4 pic5 pic6";
+
+}
+.main-heading{
+  grid-area: main-heading;
+}
+.blank{
+  grid-area: blank;
+}
+
+.WeAre{
+  grid-area: WeAre;
+}
+.pic1{
+position: absolute;
+    grid-area: pic1;
+}
+.pic2{
+position: absolute;
+    grid-area: pic2;
+    margin-top: 70px;
+}
+.pic3{
+position: absolute;
+    grid-area: pic3;
+}
+.pic4{
+position: absolute;
+    grid-area: pic4;
+}
+.pic5{
+position: absolute;
+    grid-area: pic5;
+        margin-top: 70px;
+}
+.pic6{
+position: absolute;
+    grid-area: pic6;
+}
+img{
+  max-width: 238px;
+  border-radius: 50px;
+}
+.item{
+position: relative;
+  width: 238px;
+  transition: transform 0.4s ease-in-out;
+}
+.item:hover{
+  transform: scale(1.1);
+  width: 288px;
+}
+
+@media (max-width:800px){
+  .container{
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:"main-heading WeAre"
+                        "pic1 pic2"
+                        "pic3 pic4"
+                        "pic5 pic6";
+    gap:30px;
+    margin-left:100px;
+  }
+  .pic2{
+    margin-top: 110px;
+  }
+  .pic4{
+    margin-top: 110px;
+  }
+  .pic5{
+      grid-area: pic5;
+          margin-top:0;
+  }
+  .pic6{
+    margin-top:110px;
+  }
+}
+@media (max-width:600px) {
+  .container{
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas:"main-heading" "WeAre" "pic1" "pic2"
+                        "pic3" "pic4" "pic5" "pic6";
+    gap:20px;
+    }
+    .item{
+      margin: 0;
+    }
+}
