@@ -26,7 +26,7 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
+- [Overview](#overview.png)
   - [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
